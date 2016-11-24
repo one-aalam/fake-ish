@@ -1,0 +1,25 @@
+{
+    "name": "fake-ish",
+    "version": "1.0.0",
+    "description": "Fake API for fast local development",
+    "main": "index.js",
+    "scripts": {
+        "gen-mock-data": "node scripts/generateMockData",
+        "prestart": "npm run gen-mock-data",
+        "start": "json-server --watch src/api/db.json --port 3001"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/one-aalam/fake-ish.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/one-aalam/fake-ish/issues"
+    },
+    "homepage": "https://github.com/one-aalam/fake-ish#readme",
+    "dependencies": {
+        "json-schema-faker": "0.3.7",
+        "json-server": "0.9.1"
+    }
+}
